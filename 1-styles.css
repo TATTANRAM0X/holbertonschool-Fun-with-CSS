@@ -1,0 +1,23 @@
+body {
+    font-size: 100px;
+    text-align: center;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #9c1c3d;
+}
+
+a::after {
+	content: '';
+	background-color: #9c1c3d;
+	display: block;
+	width: 0%;
+	height: 3px;
+	transition: width 1s;
+}
+
+a:hover::after {
+	width: 100%;
+}

@@ -23,24 +23,27 @@ body {
 }
 
 .toggle-cb:checked ~ .toggle-label .toggle-inner {
-	background-color: #9c1c3d;
+	background-color: #e1013c;
 }
 
 .toggle-cb ~ .toggle-label .toggle-inner::after {
 	content: "No";
 	color: #696969;
+    font-weight: bold;
 	position: absolute;
 	top: 50%;
 	left: 85%;
 	transform: translate(-50%, -50%);
-	transition: 2s;
+	transition: 1s;
 }
 
 .toggle-cb:checked ~ .toggle-label .toggle-inner::after {
 	content: "Yes";
 	color: #ffffff;
+    font-weight: bold;
 	left: 20%;
-	transition: 2s;
+	transition: 1s;
+    margin-left: 20px;
 }
 
 .toggle-switch {
